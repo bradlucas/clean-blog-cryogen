@@ -35,6 +35,10 @@
       padding: 35px 0;
       }
     </style>
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow-night-eighties.min.css">
     
   </head>
 
@@ -43,7 +47,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="{{index-uri}}">{{title}}</a>
+        <a class="navbar-brand" href="{{index-uri}}">{{author}}</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -201,6 +205,10 @@
     {% script "js/jquery.min.js" %}
     {% script "js/bootstrap.bundle.min.js" %}
 
+    {% script "js/highlight.pack.js" %}
+    <script>hljs.initHighlightingOnLoad();</script>
+    {% script "js/scripts.js" %}
+    
     <!-- Custom scripts for this template -->
     {% script "js/clean-blog.min.js" %}
 
